@@ -19,6 +19,7 @@ You can install MicroPython and CircuitPython directly from Thonny (see Setup Th
 * CircuitPython : save your script as "code.py" in the root folder of the Raspberry Pi Pico
 
 ### Current projects
-* PicoMorse (LED Version) *MicroPython* : outputs Morse code with the onboard LED on the Raspberry Pi Pico, place your text in a file named "text.txt" in the same directory as the script. Supports only alphanumeric characters!
+* PicoMorse (LED Version) *MicroPython* : outputs Morse code with the onboard LED on the Raspberry Pi Pico, place your text in a file named "text.txt" in the same directory as the script. Supports only alphanumeric characters! You can also use a LED on a breadboard by modifying line 7 `led = Pin(25, Pin.OUT)` to use whatever GPIO pin is used for your LED.
+* PicoMorse (Audio version) *CircuitPython* : same thing as the LED Version, but uses sound instead. The code was made for the [Pimoroni Audio Pack](https://pimoroni.com/picoaudio) but you can change it to use another speaker by modifying line 12 `audio = audiobusio.I2SOut(board.GP10, board.GP11, board.GP9)` to use the appropriate GPIO pins.
 
 And more coming sooner or later...
